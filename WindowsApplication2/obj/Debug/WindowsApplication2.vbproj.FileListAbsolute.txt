@@ -1,2 +1,14 @@
 d:\heber\documents\visual studio 2015\Projects\WindowsApplication2\WindowsApplication2\bin\Debug\WindowsApplication2.exe.config
 D:\Heber\Documents\Visual Studio 2015\Repos\Catedra\WindowsApplication2\bin\Debug\WindowsApplication2.exe.config
+D:\Heber\Documents\Visual Studio 2015\Repos\Catedra\WindowsApplication2\bin\Debug\WindowsApplication2.exe
+D:\Heber\Documents\Visual Studio 2015\Repos\Catedra\WindowsApplication2\bin\Debug\WindowsApplication2.pdb
+D:\Heber\Documents\Visual Studio 2015\Repos\Catedra\WindowsApplication2\bin\Debug\WindowsApplication2.xml
+D:\Heber\Documents\Visual Studio 2015\Repos\Catedra\WindowsApplication2\bin\Debug\Oracle.DataAccess.dll
+D:\Heber\Documents\Visual Studio 2015\Repos\Catedra\WindowsApplication2\obj\Debug\WindowsApplication2.vbprojResolveAssemblyReference.cache
+D:\Heber\Documents\Visual Studio 2015\Repos\Catedra\WindowsApplication2\obj\Debug\WindowsApplication2.Form1.resources
+D:\Heber\Documents\Visual Studio 2015\Repos\Catedra\WindowsApplication2\obj\Debug\WindowsApplication2.Resources.resources
+D:\Heber\Documents\Visual Studio 2015\Repos\Catedra\WindowsApplication2\obj\Debug\WindowsApplication2.vbproj.GenerateResource.Cache
+D:\Heber\Documents\Visual Studio 2015\Repos\Catedra\WindowsApplication2\obj\Debug\WindowsApplication2.exe
+D:\Heber\Documents\Visual Studio 2015\Repos\Catedra\WindowsApplication2\obj\Debug\WindowsApplication2.xml
+D:\Heber\Documents\Visual Studio 2015\Repos\Catedra\WindowsApplication2\obj\Debug\WindowsApplication2.pdb
+D:\Heber\Documents\Visual Studio 2015\Repos\Catedra\WindowsApplication2\obj\Debug\WindowsApplication2.Form2.resources
