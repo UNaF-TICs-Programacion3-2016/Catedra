@@ -1,6 +1,12 @@
 ﻿Imports Oracle.DataAccess.Client
+Public Enum TipoAccion As Byte
+    Alta = 0
+    Baja = 1
+    Modificacion = 2
+End Enum
 Public Class Form1
-
+    Friend IdPersona As Long
+    Friend Accion As TipoAccion
     Private Sub CargarPersonasBtn_Click(sender As Object, e As EventArgs) Handles CargarPersonasBtn.Click
         Dim Conexion As New OracleConnection()
         Dim Comando As New OracleCommand("Select * From Persona", Conexion)
@@ -19,7 +25,7 @@ Public Class Form1
             Tabla.Load(Reader, LoadOption.OverwriteChanges)
             PersonasCmb.DataSource = Tabla
             PersonasCmb.DisplayMember = "ApellidoyNombre"
-            PersonasCmb.ValueMember = "Sexo"
+            PersonasCmb.ValueMember = "Id_Persona"
 
         Catch ex As Exception
             MessageBox.Show(ex.Message)
@@ -80,7 +86,7 @@ Public Class Form1
     End Sub
 
     Private Sub PersonasCmb_SelectionChangeCommitted(sender As Object, e As EventArgs) Handles PersonasCmb.SelectionChangeCommitted
-        MsgBox(PersonasCmb.SelectedItem("ID_PERSONA").ToString())
+        MsgBox(PersonasCmb.SelectedValue)
     End Sub
 
 
@@ -118,6 +124,19 @@ Public Class Form1
     End Sub
 
     Private Sub AgregarPersonaCmd_Click(sender As Object, e As EventArgs) Handles AgregarPersonaCmd.Click
+        IdPersona = -1
+        Accion = TipoAccion.Alta
+        Form2.Show()
+    End Sub
+    Private Sub ModificarPersonaCmd_Click(sender As Object, e As EventArgs) Handles ModificarPersonaCmd.Click
+        IdPersona = PersonasCmb.SelectedValue
+        Accion = TipoAccion.Modificacion
+        Form2.Show()
+    End Sub
+
+    Private Sub EliminarPersonaCmd_Click(sender As Object, e As EventArgs) Handles EliminarPersonaCmd.Click
+        IdPersona = PersonasCmb.SelectedValue
+        Accion = TipoAccion.Baja
         Form2.Show()
     End Sub
 End Class

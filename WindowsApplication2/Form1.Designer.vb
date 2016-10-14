@@ -29,6 +29,8 @@ Partial Class Form1
         Me.CargarInmueblesBtn = New System.Windows.Forms.Button()
         Me.CargarPersonasConDatasetBtn = New System.Windows.Forms.Button()
         Me.AgregarPersonaCmd = New System.Windows.Forms.Button()
+        Me.ModificarPersonaCmd = New System.Windows.Forms.Button()
+        Me.EliminarPersonaCmd = New System.Windows.Forms.Button()
         CType(Me.InmuebleDGV, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -37,10 +39,10 @@ Partial Class Form1
         Me.InmuebleDGV.AllowUserToAddRows = False
         Me.InmuebleDGV.AllowUserToDeleteRows = False
         Me.InmuebleDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.InmuebleDGV.Location = New System.Drawing.Point(12, 76)
+        Me.InmuebleDGV.Location = New System.Drawing.Point(12, 109)
         Me.InmuebleDGV.Name = "InmuebleDGV"
         Me.InmuebleDGV.ReadOnly = True
-        Me.InmuebleDGV.Size = New System.Drawing.Size(554, 237)
+        Me.InmuebleDGV.Size = New System.Drawing.Size(554, 204)
         Me.InmuebleDGV.TabIndex = 0
         '
         'PersonasCmb
@@ -89,18 +91,38 @@ Partial Class Form1
         '
         'AgregarPersonaCmd
         '
-        Me.AgregarPersonaCmd.Location = New System.Drawing.Point(452, 43)
+        Me.AgregarPersonaCmd.Location = New System.Drawing.Point(15, 76)
         Me.AgregarPersonaCmd.Name = "AgregarPersonaCmd"
-        Me.AgregarPersonaCmd.Size = New System.Drawing.Size(114, 26)
+        Me.AgregarPersonaCmd.Size = New System.Drawing.Size(100, 26)
         Me.AgregarPersonaCmd.TabIndex = 6
         Me.AgregarPersonaCmd.Text = "Agregar Persona"
         Me.AgregarPersonaCmd.UseVisualStyleBackColor = True
+        '
+        'ModificarPersonaCmd
+        '
+        Me.ModificarPersonaCmd.Location = New System.Drawing.Point(121, 76)
+        Me.ModificarPersonaCmd.Name = "ModificarPersonaCmd"
+        Me.ModificarPersonaCmd.Size = New System.Drawing.Size(100, 26)
+        Me.ModificarPersonaCmd.TabIndex = 6
+        Me.ModificarPersonaCmd.Text = "Modificar Persona"
+        Me.ModificarPersonaCmd.UseVisualStyleBackColor = True
+        '
+        'EliminarPersonaCmd
+        '
+        Me.EliminarPersonaCmd.Location = New System.Drawing.Point(227, 76)
+        Me.EliminarPersonaCmd.Name = "EliminarPersonaCmd"
+        Me.EliminarPersonaCmd.Size = New System.Drawing.Size(100, 26)
+        Me.EliminarPersonaCmd.TabIndex = 6
+        Me.EliminarPersonaCmd.Text = "Eliminar Persona"
+        Me.EliminarPersonaCmd.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(578, 325)
+        Me.Controls.Add(Me.EliminarPersonaCmd)
+        Me.Controls.Add(Me.ModificarPersonaCmd)
         Me.Controls.Add(Me.AgregarPersonaCmd)
         Me.Controls.Add(Me.CargarPersonasConDatasetBtn)
         Me.Controls.Add(Me.CargarInmueblesBtn)
@@ -123,4 +145,6 @@ Partial Class Form1
     Friend WithEvents CargarInmueblesBtn As Button
     Friend WithEvents CargarPersonasConDatasetBtn As Button
     Friend WithEvents AgregarPersonaCmd As Button
+    Friend WithEvents ModificarPersonaCmd As Button
+    Friend WithEvents EliminarPersonaCmd As Button
 End Class
